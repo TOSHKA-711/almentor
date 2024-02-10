@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <title>almentor | التعلم رحله حياة</title>
+  </head>
+  <body>
+    <div class="layer" id="layer"></div>
+    <!-- start navbar -->
+    <div class="navBar">
+      <div class="container">
+        <div class="prtOne">
+          <div class="logo">
+            <img src="./imgs/logo.png" alt="logo" />
+          </div>
+          <div class="nav-content">
+            <div class="courses switch-color">
+              <p>Courses</p>
+              <i class="fa-solid fa-angle-down"></i>
+              <i class="fa-solid fa-caret-up before"></i>
+              <div class="courses-list switch-color">
+                <ul>
+                  <h2>Categories</h2>
+                  <li>Languages</li>
+                  <li>Design</li>
+                  <li>Mental Health</li>
+                  <li>Soft Skills</li>
+                  <li>Business Management</li>
+                  <li>Photography</li>
+                  <li>Marketing</li>
+                  <li>Kids Development</li>
+                  <button class="btn switch-color">Browse Courses</button>
+                </ul>
+              </div>
+            </div>
+            <div class="instructors">
+              <a href="" class="switch-color">Instructors</a>
+            </div>
+
+            <button class="btn switch-color">Subscribe</button>
+          </div>
+        </div>
+        <div class="prtTwo">
+          <div class="group">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+              <g>
+                <path
+                  d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                ></path>
+              </g>
+            </svg>
+            <input
+              placeholder="Search"
+              type="search"
+              class="input"
+              id="searchInput"
+            />
+          </div>
+          <!-- start toggle search -->
+          <div class="toggle-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+
+          <!-- end toggle search -->
+          <div class="break"></div>
+          <div class="navIcons">
+            <button class="nav-switcher switcher">EN</button>
+            <button class="nav-switcher dark-mode dark switcher">
+              <i class="fa-solid fa-circle-half-stroke"></i>
+            </button>
+            <a class="logIn switch-color" id="loginButton">Login</a>
+            <button class="btn signuP-btn switch-color" id="signup-btn">
+              Signup
+            </button>
+          </div>
+          <!-- start toggle navbar -->
+          <div class="toggle-navbar">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <!-- end toggle navbar -->
+        </div>
+      </div>
+    </div>
+    <div class="toggle-navbar-layer">
+      <div class="container">
+        <div class="child">
+          <span id="signup-toggle-btn"><i class="fa-solid fa-user-plus"></i>Sign up</span>
+          <span id="login-toggle-btn"><i class="fa-solid fa-right-to-bracket"></i>Log in</span>
+        </div>
+        <div class="child">
+          <p >Courses</p>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div class="child">
+          <div class="instructors">
+            <a href="">Instructors</a>
+          </div>
+        </div>
+        <div class="child">
+          <button class="btn">Subscribe</button>
+        </div>
+        <div class="child">
+          <button class="nav-switcher switcher">EN</button>
+          <button class="nav-switcher dark-mode dark switcher" id="toggle-dark-mode">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+          </button>
+        </div>
+        <div class="layer-close">
+          <i class="fa-solid fa-x"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- search layer -->
+    <div class="search-layer layer">
+      <div class="toggle-group">
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+          <g>
+            <path
+              d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+            ></path>
+          </g>
+        </svg>
+        <input
+          placeholder="Search"
+          type="search"
+          class="input"
+          id="searchInput"
+        />
+      </div>
+    </div>
+    <!-- search layer -->
+
+    <!--start login popup -->
+    <div id="loginPopup" class="popup">
+      <div class="login wrap">
+        <div class="h1">Login</div>
+        <input
+          pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+          placeholder="Email"
+          id="email"
+          name="email"
+          type="text"
+          class="login-text input"
+        />
+        <input
+          placeholder="Password"
+          id="password"
+          name="password"
+          type="password"
+          class="login-password input"
+        />
+        <input value="Login" class="btn login-btn" type="submit" />
+      </div>
+    </div>
+    <!--end login popup -->
+    <!--start signup popup -->
+    <div id="signupPopup" class="sign-popup">
+      <div class="signup login wrap">
+        <div class="h1">Signup</div>
+        <input
+          pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+          placeholder="Email"
+          id="email"
+          name="email"
+          type="text"
+          class="login-text input"
+        />
+        <input
+          pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+          placeholder="Confirm Email"
+          id="email"
+          name="email"
+          type="text"
+          class="login-text input"
+        />
+        <input
+          placeholder="Password"
+          id="password"
+          name="password"
+          type="password"
+          class="login-password input"
+        />
+        <input value="Signup" class="btn login-btn" type="submit" />
+      </div>
+    </div>
+    <!--end signup popup -->
+
+    <!-- end navbar -->
+    <!-- start home -->
+    <div class="home">
+      <div class="container">
+        <div class="homeText">
+          <h1>Learn Online</h1>
+          <p>From the biggest arabic library of video-based Courses</p>
+          <div class="price">
+            <p class="price-p">Only for <span>99 EGP</span>/month</p>
+            <p class="italic">Billed yearly</p>
+          </div>
+          <button class="btn">Subscribe Now</button>
+        </div>
+        <div class="picks">
+          <div class="pickText">
+            <h2>Picks</h2>
+            <div class="section">
+              <a href="">Featured courses</a>
+              <a href="">Most Viewed</a>
+              <a href="" class="lst">New Courses</a>
+            </div>
+          </div>
+        </div>
+        <!-- start carousel -->
+        <div class="carousel">
+          <div class="slider-wrapper">
+            <button
+              id="prev-slide"
+              class="slide-button material-symbols-rounded"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <ul class="image-list">
+              <div class="custom-card colored-card">
+                <img
+                  class="card-img-top"
+                  src="https://cdn-share.almentor.net/images/ad05dd0fe986694334aba5afe98a728ceff4a718e11fccb15a6f9cf4e677b76e"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">First Time Manager</h5>
+                </div>
+                <div class="card-footer">
+                  <span class="footer-name switch-color">John Doe</span>
+                  <i class="fa-regular fa-bookmark switch-color switcher"></i>
+                </div>
+              </div>
+              <div class="custom-card colored-card">
+                <img
+                  class="card-img-top"
+                  src="https://cdn-share.almentor.net/images/0221e3a5eecdaaa5db32869bbd12f769393335c5541b70c9bd2aa3e90afd1b85"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">First Time Manager</h5>
+                </div>
+                <div class="card-footer">
+                  <span class="footer-name switch-color">John Doe</span>
+                  <i class="fa-regular fa-bookmark switch-color switcher"></i>
+                </div>
+              </div>
+              <div class="custom-card colored-card">
+                <img
+                  class="card-img-top"
+                  src="https://cdn-share.almentor.net/images/54f7c1ccd553bc85735f40163f00417471c943ddb481ae814e81036e7e7f209d"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">First Time Manager</h5>
+                </div>
+                <div class="card-footer">
+                  <span class="footer-name switch-color">John Doe</span>
+                  <i class="fa-regular fa-bookmark switch-color switcher"></i>
+                </div>
+              </div>
+              <div class="custom-card colored-card">
+                <img
+                  class="card-img-top"
+                  src="https://cdn-share.almentor.net/images/193d7ad070b5693e9b279771771f291e3a457aae073b2c34a66d3bf8d757924d"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">First Time Manager</h5>
+                </div>
+                <div class="card-footer">
+                  <span class="footer-name switch-color">John Doe</span>
+                  <i class="fa-regular fa-bookmark switch-color switcher"></i>
+                </div>
+              </div>
+              <div class="custom-card colored-card">
+                <img
+                  class="card-img-top"
+                  src="https://cdn-share.almentor.net/images/094a1c636f480c863fbb80236a427698bbe8a4f48b3f3adf33bd2db7641b362a"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">First Time Manager</h5>
+                </div>
+                <div class="card-footer">
+                  <span class="footer-name switch-color">John Doe</span>
+                  <i class="fa-regular fa-bookmark switch-color switcher"></i>
+                </div>
+              </div>
+              <div class="custom-card colored-card">
+                <img
+                  class="card-img-top"
+                  src="https://cdn-share.almentor.net/images/3dae73899dad36d9a063e0caf688a94c9db033849b363b83c77b7a2c30b93aa9"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">First Time Manager</h5>
+                </div>
+                <div class="card-footer">
+                  <span class="footer-name switch-color">John Doe</span>
+                  <i class="fa-regular fa-bookmark switch-color switcher"></i>
+                </div>
+              </div>
+              <div class="custom-card colored-card">
+                <img
+                  class="card-img-top"
+                  src="https://cdn-share.almentor.net/images/ad60dbd9114f6cb2ecd7ddda034fef0cd8d1ee853898ac8e008d559f937d84c9"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">First Time Manager</h5>
+                </div>
+                <div class="card-footer">
+                  <span class="footer-name switch-color">John Doe</span>
+                  <i class="fa-regular fa-bookmark switch-color switcher"></i>
+                </div>
+              </div>
+              <div class="custom-card colored-card">
+                <img
+                  class="card-img-top"
+                  src="https://cdn-share.almentor.net/images/ad05dd0fe986694334aba5afe98a728ceff4a718e11fccb15a6f9cf4e677b76e"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">First Time Manager</h5>
+                </div>
+                <div class="card-footer">
+                  <span class="footer-name switch-color">John Doe</span>
+                  <i class="fa-regular fa-bookmark switch-color switcher"></i>
+                </div>
+              </div>
+              <div class="custom-card colored-card">
+                <img
+                  class="card-img-top"
+                  src="https://cdn-share.almentor.net/images/9489c397c87fa5ba4b691abd6db80f7092d5c959b64d6f1f2e92726e782cc152"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">First Time Manager</h5>
+                </div>
+                <div class="card-footer">
+                  <span class="footer-name switch-color">John Doe</span>
+                  <i class="fa-regular fa-bookmark switch-color switcher"></i>
+                </div>
+              </div>
+              <div class="custom-card colored-card">
+                <img
+                  class="card-img-top"
+                  src="https://cdn-share.almentor.net/images/4c0a32482c4896c3b7fa9a50e3a61f3101869b2609cdf9199762a755aa6a56bf"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">First Time Manager</h5>
+                </div>
+                <div class="card-footer">
+                  <span class="footer-name switch-color">John Doe</span>
+                  <i class="fa-regular fa-bookmark switch-color switcher"></i>
+                </div>
+              </div>
+            </ul>
+            <button
+              id="next-slide"
+              class="slide-button material-symbols-rounded"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="slider-scrollbar">
+            <div class="scrollbar-track">
+              <div class="scrollbar-thumb"></div>
+            </div>
+          </div>
+        </div>
+        <!-- end carousel -->
+      </div>
+    </div>
+
+    <!-- end home -->
+    <!-- start courses categories -->
+    <div class="courses-sec">
+      <div class="container">
+        <div class="title switch-color">
+          <h1>Courses Categories</h1>
+        </div>
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <img
+              class="carousel-image"
+              src="https://cdn-share.almentor.net/images/54f7c1ccd553bc85735f40163f00417471c943ddb481ae814e81036e7e7f209d"
+              alt="Image 2"
+            />
+            <img
+              class="carousel-image"
+              src="https://cdn-share.almentor.net/images/0221e3a5eecdaaa5db32869bbd12f769393335c5541b70c9bd2aa3e90afd1b85"
+              alt="Image 3"
+            />
+            <img
+              class="carousel-image"
+              src="https://cdn-share.almentor.net/images/ad05dd0fe986694334aba5afe98a728ceff4a718e11fccb15a6f9cf4e677b76e"
+              alt="Image 1"
+            />
+            <img
+              class="carousel-image"
+              src="https://cdn-share.almentor.net/images/54f7c1ccd553bc85735f40163f00417471c943ddb481ae814e81036e7e7f209d"
+              alt="Image 2"
+            />
+            <img
+              class="carousel-image"
+              src="https://cdn-share.almentor.net/images/0221e3a5eecdaaa5db32869bbd12f769393335c5541b70c9bd2aa3e90afd1b85"
+              alt="Image 3"
+            />
+            <img
+              class="carousel-image"
+              src="https://cdn-share.almentor.net/images/ad05dd0fe986694334aba5afe98a728ceff4a718e11fccb15a6f9cf4e677b76e"
+              alt="Image 1"
+            />
+            <img
+              class="carousel-image"
+              src="https://cdn-share.almentor.net/images/54f7c1ccd553bc85735f40163f00417471c943ddb481ae814e81036e7e7f209d"
+              alt="Image 2"
+            />
+            <img
+              class="carousel-image"
+              src="https://cdn-share.almentor.net/images/ad05dd0fe986694334aba5afe98a728ceff4a718e11fccb15a6f9cf4e677b76e"
+              alt="Image 1"
+            />
+            <img
+              class="carousel-image"
+              src="https://cdn-share.almentor.net/images/54f7c1ccd553bc85735f40163f00417471c943ddb481ae814e81036e7e7f209d"
+              alt="Image 2"
+            />
+            <img
+              class="carousel-image"
+              src="https://cdn-share.almentor.net/images/0221e3a5eecdaaa5db32869bbd12f769393335c5541b70c9bd2aa3e90afd1b85"
+              alt="Image 3"
+            />
+            <img
+              class="carousel-image"
+              src="https://cdn-share.almentor.net/images/ad05dd0fe986694334aba5afe98a728ceff4a718e11fccb15a6f9cf4e677b76e"
+              alt="Image 1"
+            />
+            <img
+              class="carousel-image"
+              src="https://cdn-share.almentor.net/images/54f7c1ccd553bc85735f40163f00417471c943ddb481ae814e81036e7e7f209d"
+              alt="Image 2"
+            />
+          </div>
+          <button class="prev-btn carousel-btn">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="next-btn carousel-btn">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <a href="" class="category-btn switch-color"
+          ><button class="btn switch-color">Browse Courses</button></a
+        >
+      </div>
+    </div>
+
+    <!-- end courses categories -->
+    <!-- start instructors -->
+
+    <div class="instructors-sec">
+      <div class="container">
+        <div class="text switch-color">
+          <h1>Our Instructors</h1>
+          <p>
+            Our instructors are real world experts bringing real knowledge and
+            offering unique experiences that will help you reach your personal
+            and career goals.
+          </p>
+        </div>
+        <div class="instructors-carousel">
+          <!-- start instructor carousel -->
+          <div class="carousel">
+            <div class="slider-wrapper inst-slider">
+              <button
+                id="prev-slide"
+                class="slide-button inst-slider-btn material-symbols-rounded"
+              >
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <ul class="image-list inst-img-list">
+                <div class="custom-card">
+                  <img
+                    class="card-img-top"
+                    src="https://cdn-share.almentor.net/images/ad05dd0fe986694334aba5afe98a728ceff4a718e11fccb15a6f9cf4e677b76e"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">First Time Manager</h5>
+                  </div>
+                </div>
+                <div class="custom-card">
+                  <img
+                    class="card-img-top"
+                    src="https://cdn-share.almentor.net/images/0221e3a5eecdaaa5db32869bbd12f769393335c5541b70c9bd2aa3e90afd1b85"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">First Time Manager</h5>
+                  </div>
+                </div>
+
+                <div class="custom-card">
+                  <img
+                    class="card-img-top"
+                    src="https://cdn-share.almentor.net/images/094a1c636f480c863fbb80236a427698bbe8a4f48b3f3adf33bd2db7641b362a"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">First Time Manager</h5>
+                  </div>
+                </div>
+
+                <div class="custom-card">
+                  <img
+                    class="card-img-top"
+                    src="https://cdn-share.almentor.net/images/ad60dbd9114f6cb2ecd7ddda034fef0cd8d1ee853898ac8e008d559f937d84c9"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">First Time Manager</h5>
+                  </div>
+                </div>
+
+                <div class="custom-card">
+                  <img
+                    class="card-img-top"
+                    src="https://cdn-share.almentor.net/images/4c0a32482c4896c3b7fa9a50e3a61f3101869b2609cdf9199762a755aa6a56bf"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">First Time Manager</h5>
+                  </div>
+                </div>
+
+                <div class="custom-card">
+                  <img
+                    class="card-img-top"
+                    src="https://cdn-share.almentor.net/images/ad05dd0fe986694334aba5afe98a728ceff4a718e11fccb15a6f9cf4e677b76e"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">First Time Manager</h5>
+                  </div>
+                </div>
+                <div class="custom-card">
+                  <img
+                    class="card-img-top"
+                    src="https://cdn-share.almentor.net/images/0221e3a5eecdaaa5db32869bbd12f769393335c5541b70c9bd2aa3e90afd1b85"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">First Time Manager</h5>
+                  </div>
+                </div>
+
+                <div class="custom-card">
+                  <img
+                    class="card-img-top"
+                    src="https://cdn-share.almentor.net/images/094a1c636f480c863fbb80236a427698bbe8a4f48b3f3adf33bd2db7641b362a"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">First Time Manager</h5>
+                  </div>
+                </div>
+              </ul>
+              <button
+                id="next-slide"
+                class="slide-button inst-slider-btn material-symbols-rounded"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <div class="slider-scrollbar inst-slider-scrollbar">
+              <div class="scrollbar-track">
+                <div class="scrollbar-thumb inst-scrollbar-thumb"></div>
+              </div>
+            </div>
+          </div>
+          <!-- end carousel -->
+          <button class="btn">See All Instructors</button>
+        </div>
+      </div>
+    </div>
+    <!-- end instructors -->
+    <div class="footer">
+      <div class="container switch-color">
+        <div class="child">
+          <img src="./imgs/logo.png" alt="footer-logo" />
+          <a href="" class="switch-color">About</a>
+          <a href="" class="switch-color">Press</a>
+          <a href="" class="switch-color">Team</a>
+          <a href="" class="switch-color">Contact</a>
+        </div>
+        <div class="child">
+          <h2 class="switch-color">Explore</h2>
+          <a href="" class="switch-color">Browse Courses</a>
+          <a href="" class="switch-color">Popular Courses</a>
+          <a href="" class="switch-color">Subscription Plans</a>
+          <a href="" class="switch-color">Instructors</a>
+          <a href="" class="switch-color">Learning Partners</a>
+        </div>
+        <div class="child">
+          <h2 class="switch-color">Business</h2>
+          <a href="" class="switch-color">About</a>
+          <button class="btn switch-color">Train Your Team</button>
+        </div>
+        <div class="child">
+          <h2 class="switch-color">Download App</h2>
+          <a href=""
+            ><img
+              src="https://www.almentor.net/assets/images/play-store.svg"
+              alt="app store"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="rights">
+      <div class="container">
+        <div class="text">&copy; 2021 AlMentor - All rights reserved</div>
+        <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
