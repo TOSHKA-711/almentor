@@ -276,8 +276,16 @@ toggleSearchIcon.addEventListener("click", () => {
 
 // handle toggle navbar layer
 
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
 let toggleNavIcon = document.querySelector(".toggle-navbar");
 toggleNavIcon.addEventListener("click", () => {
+  scrollToTop();
   let navLayer = document.querySelector(".toggle-navbar-layer");
   navLayer.style.display = "flex";
   document.body.style.overflow = "hidden";
@@ -381,9 +389,7 @@ signupToggleButton.addEventListener("click", function () {
   document.body.style.overflow = "hidden";
 });
 
-
 // handle toggle dark mode switcher
-
 
 let toggleDarkSwitcher = document.getElementById("toggle-dark-mode");
 toggleDarkSwitcher.addEventListener("click", () => {
