@@ -762,6 +762,60 @@ i.fa-solid.fa-bars {
   font-size: 22px;
   background-color: rgb(30, 33, 33);
 }
+/* ------------------- */
+.custom-card {
+  width: 15rem;
+  overflow: hidden;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
+}
+.colored-card {
+  background-color: rgb(30, 33, 33);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.custom-card .card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.custom-card .card-body {
+  padding: 1.25rem;
+}
+
+.custom-card .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.custom-card .card-text {
+  margin-bottom: 1rem;
+}
+
+.custom-card .card-footer {
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #eee;
+}
+
+.custom-card .footer-name {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.fa-regular.fa-bookmark {
+  color: #eee;
+  font-size: 22px;
+  background-color: rgb(30, 33, 33);
+}
+
+
 
 /* end home */
 

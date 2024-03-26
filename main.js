@@ -270,6 +270,7 @@ toggleSearchLayer.addEventListener("click", () => {
 });
 
 toggleSearchIcon.addEventListener("click", () => {
+  scrollToTop();
   toggleSearchLayer.style.display = "flex";
   document.body.style.overflowY = "hidden";
 });
